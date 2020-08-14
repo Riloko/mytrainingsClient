@@ -1,0 +1,40 @@
+@import '../../main'
+
+.sidebar  
+    height: 100%
+    width: 15%    
+    background: $main-blue
+    &__nav
+        height: 80%
+        width: 100%
+        overflow-y: auto
+        &__link
+            height: 200px
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            text-decoration: none
+            color: $main-light
+            transition: .5s
+            &-icon
+                margin-bottom: 10px
+            &-text
+            &:hover
+                background: $main-blue-dark
+        .router-link-active
+            background: $main-blue-dark
+    &__logo
+        height: 20%
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        &__link
+            color: $main-light
+
+
+
+
+                

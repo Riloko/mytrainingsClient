@@ -1,0 +1,88 @@
+{
+    "login": {
+        "headerText": "Войдите в аккаунт",
+        "method": "POST",
+        "URL": "/login",
+        "inputs":[
+            {
+                "title": "Почта",                
+                "name": "login",
+                "type": "mail",
+                "placeholder": "Ваша почта"
+            },
+            {
+                "title": "Пароль",                
+                "name": "password",
+                "type": "password",
+                "placeholder": "Ваш пароль"
+            }
+        ],
+        "buttonText": "Войти",
+        "links": [
+            {
+                "title": "Регистрация",
+                "link": "/registration"
+            },
+            {
+                "title": "Забыли пароль?",
+                "link": "/login/restore"
+            }
+        ]
+    },
+    "register": {
+        "headerText": "Зарегистрируйтесь",
+        "method": "POST",
+        "URL": "/registration",
+        "inputs": [
+            {
+                "title": "Почта",                
+                "name": "reglogin",
+                "type": "mail",
+                "placeholder": "Ваша почта"
+            },
+            {
+                "title": "Пароль",                
+                "name": "regpassword",
+                "type": "password",
+                "placeholder": "Ваш пароль"
+            },
+            {
+                "title": "Повторите пароль",                
+                "name": "regPassConfirm",
+                "type": "password",
+                "placeholder": "Повторите пароль"
+            }
+        ],
+        "buttonText": "Зарегистрироваться",
+        "links": [
+            {
+                "title": "Есть аккаунт",
+                "link": "/login"
+            }
+        ]
+    },
+    "forgot": {
+        "headerText": "Мы отправим Вам пароль на почту",
+        "method": "POST",
+        "URL": "/login/restore",
+        "inputs": [
+            {
+                "title": "Почта",                
+                "name": "reslogin",
+                "type": "mail",
+                "placeholder": "Ваша почта"
+            }
+        ],
+        "buttonText": "Выслать пароль",
+        "links": [
+            {
+                "title": "Регистрация",
+                "link": "/registration"
+            },
+            {
+                "title": "Вспомнил пароль",
+                "link": "/login"
+            }
+        ]
+    }
+}

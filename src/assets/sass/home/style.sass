@@ -1,0 +1,117 @@
+@import '../main.sass'
+
+.auth    
+    height: 100vh
+    width: 100% 
+    display: flex 
+    color: $main-blue
+    &__sidebar  
+        width: 360px
+        padding: 100px 40px 100px 200px
+        background: $main-light        
+        &_logo
+            display: flex            
+            margin-bottom: 80px                       
+            .logo
+                color: $main-blue
+        &_form
+            &-header                
+                display: flex
+                flex-direction: column                
+                font-size: 24px
+                font-weight: semi-bold
+                padding: 0 0 40px 0 
+                &__text
+                    margin-bottom: 5px
+            &-body
+                &_inputgroup
+                    margin-bottom: 40px
+                &_linkgroup
+                    display: flex
+                    justify-content: space-between
+                    margin-bottom: 40px
+                    &__link
+                        color: $main-blue
+                        width: 50%                                        
+                &__input
+                    border-bottom: 1px solid $main-blue
+                    padding: 10px 0
+                    display: flex
+                    label
+                        width: 30%
+                        font-weight: bold
+                        word-break: break-word
+                    input
+                        width: 70%
+                        outline: none
+                        background: inherit
+                        border: 0
+                &__button
+                    width: 100%
+                    padding: 17px 0
+                    background: inherit                    
+                    border-radius: 5px 
+                    border: 1px solid $main-blue
+                    cursor: pointer
+                    transition: .5s
+                    &:hover
+                        background:  $main-blue
+                        color: $main-light
+
+    &__carousel
+        width: 70%
+        &_slide
+            position: relative
+            height: 100%
+            width: 100% !important
+            &-img
+                width: 100%
+                height: 100%
+            &-info
+                position: absolute
+                left: 50px
+                top: 70%
+                padding: 15px
+                border-radius: 5px
+                background: $main-blue-opacity
+                &-header
+                    font-size: 24px
+                    color: $main-light                    
+                &-subheader
+                    font-size: 18px
+                    color: $main-light
+
+
+
+
+
+
+
+    .agile__actions
+        position: absolute
+        right: 50px
+        bottom: 50px
+        .agile__dots
+            height: 100px
+            flex-direction: column                
+            justify-content: space-between
+            .agile__dot
+                button
+                    height: 15px
+                    width: 15px
+                    border: 0
+                    border-radius: 50%
+                    background-color: $main-light
+                    transition: .5s
+                &:hover
+                    button
+                        background-color: $main-blue
+                &--current
+                    button
+                        background-color: $main-blue
+                    
+    .agile__list
+        height: 100%
+    .agile__track
+        height: 100%
+        
