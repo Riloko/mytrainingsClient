@@ -1,6 +1,100 @@
 @import '../../main'
 
 .main
-    height: 100%
     width: 85%   
+    height: 100%
     background: $main-light
+    overflow: hidden
+    &-header
+        height: 50px
+        padding: 40px
+        display: flex
+        justify-content: space-between
+        &-buttons
+            width: 50%
+            
+        &-pagging
+            width: 50%
+            &-body
+                display: flex
+                justify-content: space-around
+                align-items: center
+                &-info
+                    &__text
+                        margin: 0 0 10px 0
+                        &-count
+                            font-weight: bold
+                &-buttons
+                    .btn-outlined:not(:last-child)
+                        margin-right: 10px
+
+
+    &-body
+        display: flex
+        flex-wrap: wrap
+        overflow-y: scroll
+        height: calc(100% - 210px)
+        padding: 0 40px 40px 40px
+
+
+
+.card
+    width: 200px
+    height: 280px
+    padding: 25px
+    border: 1px solid $main-blue
+    border-radius: 5px
+    margin: 0 40px 40px 0
+    &-header
+        text-align: center
+        padding: 0 0 10px 0
+        margin: 0 0 20px 0
+        border-bottom: 1px solid $main-blue
+        &__text
+            padding: 0
+            margin: 0
+            font-size: 17px
+            color: $main-blue
+    &-body
+        &-description
+            margin: 0 0 20px 0
+            &__title
+                margin: 0 0 10px 0
+                padding: 0
+                color: $main-blue
+            &-textarea
+                height: 55px
+                padding: 5px
+                background: $main-blue
+                border-radius: 5px
+                overflow: hidden
+                text-overflow: ellipsis
+                word-wrap: break-word
+                &__text
+                    font-size: 14px
+                    color: $main-light
+        &-section
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin: 0 0 20px 0
+            &__title
+                width: 40%
+                margin: 0
+                padding: 0
+                color: $main-blue
+            &__data
+                width: 60%
+                text-align: right
+                color: $main-blue
+            &__difficulty
+                width: 50%
+                display: flex
+                justify-content: space-between
+        &-buttons
+            display: flex
+            justify-content: space-between
+                    
+
+
+    

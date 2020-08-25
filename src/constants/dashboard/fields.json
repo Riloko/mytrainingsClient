@@ -1,0 +1,38 @@
+{
+    "add_training": {
+        "headerText": "Добавить тренировку",
+        "greet": false,
+        "method": "POST",
+        "URL": "/dashboard/add_training",
+        "inputs":[
+            {
+                "title": "Название",                
+                "name": "name",
+                "type": "text",
+                "placeholder": "Название тренировки"
+            },
+            {
+                "title": "Описание",                
+                "name": "description",
+                "type": "text",
+                "placeholder": "Описнаие тренировки"
+            },
+            {
+                "title": "Сложность",                
+                "name": "difficulty",
+                "type": "number",
+                "placeholder": "Сложность"
+            },
+            {
+                "title": "Время",                
+                "name": "time",
+                "type": "text",
+                "placeholder": "Время тренировки"
+            }
+        ],
+        "buttonText": "Добавить упражнения",
+        "links": [
+            
+        ]
+    }    
+}

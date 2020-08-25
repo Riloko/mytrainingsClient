@@ -1,9 +1,10 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
+// views
 import Home from '@/views/home/Home.vue';
 import Dashboard from '@/views/dashboard/Dashboard.vue';
-import Profile from '@/views/dashboard/Profile.vue';
+import Error from '@/views/errors/error.vue';
 
 // Constants
 import homeFileds from '@/constants/home/fields.json';
@@ -45,15 +46,32 @@ Vue.use(VueRouter)
       name: 'dashboard',
       component: Dashboard,
       props: {
-        
+        view: "trainings"
       }
     },
     {
       path: '/profile',
       name: 'profile',
-      component: Profile,
+      component: Dashboard,
       props: {
-        
+        view: "profile"
+      }
+    },
+    {
+      path: '/dashboard/add_trainings',
+      name: 'add_trainings',
+      component: Dashboard,
+      props: {
+        view: "add_trainings"
+      }
+    },
+    {
+      path: '*',
+      name: 'error',
+      component: Error,
+      props: {
+        error: "404",
+        desc: "Не туда заглянули"
       }
     }
   ]

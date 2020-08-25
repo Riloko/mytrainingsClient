@@ -3,7 +3,7 @@
         <Header />
         <div class="dashboard-body">
             <Sidebar />
-            <Main />
+            <Main :view="view"/>
         </div>
     </div>
 </template>
@@ -24,6 +24,9 @@ export default {
         Header,
         Sidebar,
         Main
+    },
+    "props": {
+        view: String
     }
 }
 </script>

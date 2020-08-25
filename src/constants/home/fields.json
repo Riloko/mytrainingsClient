@@ -1,6 +1,7 @@
 {
     "login": {
         "headerText": "Войдите в аккаунт",
+        "greet": true,
         "method": "POST",
         "URL": "/login",
         "inputs":[
@@ -31,6 +32,7 @@
     },
     "register": {
         "headerText": "Зарегистрируйтесь",
+        "greet": true,
         "method": "POST",
         "URL": "/registration",
         "inputs": [
@@ -63,6 +65,7 @@
     },
     "forgot": {
         "headerText": "Мы отправим Вам пароль на почту",
+        "greet": false,
         "method": "POST",
         "URL": "/login/restore",
         "inputs": [

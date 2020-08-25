@@ -1,0 +1,42 @@
+@import '../../main';
+
+.popup
+    height: 100%
+    width: 100%
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 9999
+    display: flex
+    justify-content: center
+    align-items: center
+    &-wrapper
+        height: 100%
+        width: 100%
+        position: absolute
+        background: $main-blue-dark
+        opacity: 0.7
+    &-content        
+        width: 450px
+        padding: 25px
+        position: relative
+        background: $main-light
+        border-radius: 5px
+        &-closer
+            height: 30px
+            width: 30px
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            top: -35px
+            right: -35px
+            background: $main-light
+            border-radius: 50%
+            cursor: pointer
+            transition: .5s
+            &:hover
+                transform: rotate(180deg)
+
