@@ -5,7 +5,7 @@
             <span class="popup-content-closer" v-on:click="closePopup">
                 <Cross />
             </span>
-            <Form v-bind:struct="struct"/>
+            <slot></slot>
         </div>
     </div>
 </template>
@@ -14,18 +14,13 @@
 <script>
 import '@/assets/sass/components/popup/popup.sass';
 
-import Form from '@/components/common/form';
-
-
 import Cross from '@/assets/icons/svg/cross';
 
 export default {
     "name": "popup",
     "props": {
-        struct: Object
     },
     "components": {
-        Form,
         Cross
     },
     "computed": {

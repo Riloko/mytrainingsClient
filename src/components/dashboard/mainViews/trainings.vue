@@ -1,6 +1,8 @@
 <template>
     <div class="main">
-        <Popup v-if="view === 'add_trainings'" v-bind:struct="struct.add_training" />
+        <Popup v-if="view === 'add_trainings'">
+            <Form v-bind:struct="struct.add_training"/>
+        </Popup> 
         <MainHeader>
             <template v-slot:btn>
                 <Button name="Добавить тренировку" py="15" px="22" v-bind:outlined="false" v-on:prop-event="openPopup"/>
@@ -25,6 +27,7 @@ import Button from '@/components/common/button';
 import Pagging from '@/components/common/pagging';
 
 import Popup from '@/components/common/popup';
+import Form from '@/components/common/form';
 
 
 export default {
@@ -39,7 +42,8 @@ export default {
         Card,
         Button,
         Pagging,
-        Popup
+        Popup,
+        Form
     },    
     computed: {
         trainings () {

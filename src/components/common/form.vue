@@ -63,7 +63,10 @@ export default {
                 body: JSON.stringify(data) 
             })
                 .then(res => res.json())
-                .then(body => console.log(body))
+                .then(body => {
+                    console.log(body)
+                    this.$router.push('/dashboard')
+                })
                 .catch(err => console.log(err))
                 
         }
