@@ -1,10 +1,13 @@
 @import '../../main'
 
 .main
-    width: 85%   
-    height: 100%
-    background: $main-light
+    width: 100%   
+    height: 100%    
     overflow: hidden
+    &-wrapper
+        width: 85%   
+        height: 100%
+        background: $main-light
     &-header
         height: 50px
         padding: 40px
@@ -12,6 +15,10 @@
         justify-content: space-between
         &-buttons
             width: 50%
+            display: flex
+            align-items: center
+            .btn-colored:not(:last-child)
+                margin-right: 10px
             
         &-pagging
             width: 50%

@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="card-body-buttons">
-                <Button name="К тренировке" v-bind:outlined="true" px="22" py="10"/>
+                <Button name="К тренировке" v-bind:outlined="true" px="22" py="10" v-on:prop-event="moveToTraining(struct.ID)"/>
                 <Button name="..." v-bind:outlined="true" py="10" px="15"/>
             </div>
         </div>
@@ -55,6 +55,8 @@ export default {
     },
     "data": function () {
         const difficulty = [];
+        // const time = Date(this.struct.Time);
+
         for (let i = 0; i < 5; i++) {
             if (i < this.struct.Difficulty) {
                 difficulty.push("#C99E10")
@@ -64,7 +66,14 @@ export default {
             }
         }
 
-        return {difficulty}
+        return {
+            difficulty
+            }
+    },
+    "methods": {
+        moveToTraining (id) {
+            this.$router.push(`/dashboard/training/${id}`)
+        }
     }
 }
 </script>

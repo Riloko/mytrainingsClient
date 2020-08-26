@@ -1,12 +1,14 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
-import {pagging} from './modules/pagging';
+import {trainings} from './modules/trainings';
+import {exercises} from './modules/exercises';
 
 Vue.use(Vuex);
 
 export const store = new Vuex.Store({
   modules: {
-    pagging: pagging
+    trainings: trainings,
+    exercises: exercises
   }
 });

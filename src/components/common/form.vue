@@ -48,7 +48,7 @@ export default {
             }             
             
             event.preventDefault()   
-            
+
             fetch(`${URLbase}${props.URL}`, {
                 method: 'POST',
                 mode: 'cors', 

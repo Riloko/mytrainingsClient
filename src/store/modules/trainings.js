@@ -1,4 +1,4 @@
-export const pagging = {
+export const trainings = {
     state: {
         trainings: [],
         trainingsCount: 0,

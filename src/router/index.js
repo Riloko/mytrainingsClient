@@ -41,6 +41,8 @@ Vue.use(VueRouter)
         struct: homeFileds.forgot
       }
     },
+
+
     {
       path: '/dashboard',
       name: 'dashboard',
@@ -62,9 +64,19 @@ Vue.use(VueRouter)
       name: 'add_trainings',
       component: Dashboard,
       props: {
-        view: "add_trainings"
+        view: "add_training"
       }
     },
+    {
+      path: '/dashboard/training/:id',
+      name: 'training',
+      component: Dashboard,
+      props: {
+        view: "training_detailed"
+      }
+    },
+
+    
     {
       path: '*',
       name: 'error',

@@ -1,6 +1,6 @@
 <template>
     <div class="main">
-        <Popup v-if="view === 'add_trainings'">
+        <Popup v-if="view === 'add_training'">
             <Form v-bind:struct="struct.add_training"/>
         </Popup> 
         <MainHeader>
